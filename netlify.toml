@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: sirve index.html para rutas que no sean archivos estáticos
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
